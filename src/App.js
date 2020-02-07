@@ -7,8 +7,8 @@ function App() {
   return (
     <React.Fragment>
       <header>
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <img src="https://www.dropbox.com/s/zh6tgeyqvnffw33/broadcastCamcorder.jpg?raw=1" className="App-logo" alt="Camera Image" />
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
