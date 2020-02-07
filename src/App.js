@@ -20,7 +20,9 @@ function App() {
           Learn React
         </a> */}
       </header>
-      <ProducerComp />
+      <section>
+        <ProducerComp />
+      </section>
     </React.Fragment>
   );
 }
