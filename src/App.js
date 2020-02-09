@@ -7,10 +7,10 @@ import './App.css';
 class ProducerComp extends React.Component{
   constructor(props) {
     super(props);
-      this.state {
-        producers: data;
-      };
-      
+      this.state = {
+        producers: data
+      }
+
   }
 
   return (
