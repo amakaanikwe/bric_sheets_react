@@ -21,7 +21,7 @@ function App() {
         </a> */}
       </header>
       <section>
-        <ProducerComp />
+        {this.props.menu.coffee.map((item, i) => <ProducerComp key = {i} coffee = {item} />)}
       </section>
     </React.Fragment>
   );
