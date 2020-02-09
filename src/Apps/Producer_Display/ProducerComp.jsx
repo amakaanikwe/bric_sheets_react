@@ -16,7 +16,7 @@ class ProducerComp extends React.Component{
             <h5 className="col-lg-12">Bric Certifications</h5>
             <div className="col-lg-8">
               <ul>
-                <li>{ this.props.bricCertification}</li>
+                <li>{this.props.bricCertification}</li>
               </ul>
             </div>
             <h5 className="col-lg-12">Work Experience</h5>
