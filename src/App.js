@@ -4,7 +4,7 @@ import ProducerComp from "./Apps/Producer_Display/ProducerComp.jsx";
 import data from "./data/data.json";
 import './App.css';
 
-class ProducerComp extends React.Component{
+class App extends React.Component{
   constructor(props) {
     super(props);
       this.state = {
