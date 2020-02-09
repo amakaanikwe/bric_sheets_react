@@ -1,9 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import ProducerComp from "./Apps/Producer_Display/ProducerComp.jsx";
+import data from "./data/data.json";
 import './App.css';
 
-function App() {
+class ProducerComp extends React.Component{
+  constructor(props) {
+    super(props);
+      this.state {
+        producers: data;
+      };
+      
+  }
+
   return (
     <React.Fragment>
       <header>

@@ -8,21 +8,21 @@ class ProducerComp extends React.Component{
         <section class="container containerStyle" ng-repeat="person in filteredProducers |orderBy: 'lastName' ">
           <div class="row">
             <div class="col-lg-8">
-              <h3>{{ person.firstName + " " + person.lastName }}</h3>
+              <h3>{person.firstName + " " + person.lastName}</h3>
             </div>
-            <div class="col-lg-4">{{person.emailAddress}}</div>
+            <div class="col-lg-4">{person.emailAddress}</div>
           </div>
           <div class="row">
             <h5 class="col-lg-12">Bric Certifications</h5>
             <div class="col-lg-8">
               <ul>
-                <li>{{ person.bricCertification }}</li>
+                <li>{ person.bricCertification}</li>
               </ul>
             </div>
             <h5 class="col-lg-12">Work Experience</h5>
             <div class="col-lg-8">
               <ul>
-                <li>{{ person.workExperience }}</li>
+                <li>{person.workExperience}</li>
               </ul>
               <div>
             <a ng-click="openModal(person)">
@@ -31,7 +31,7 @@ class ProducerComp extends React.Component{
         </div>
       </div>
     </div>
-  </section>
+    </section>
       )
     }
   
