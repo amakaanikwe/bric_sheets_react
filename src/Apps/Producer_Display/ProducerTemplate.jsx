@@ -8,21 +8,21 @@ class ProducerTempComp extends React.Component{
         <section className="container">
           <div className="row">
             <div className="col-lg-8">
-              <h3>{this.props.producers.firstName + " " + this.props.producers.lastName}</h3>
+              <h3>{this.props.producer.firstName + " " + this.props.producer.lastName}</h3>
             </div>
-            <div className="col-lg-4">{this.props.producers.emailAddress}</div>
+            <div className="col-lg-4">{this.props.producer.emailAddress}</div>
           </div>
           <div className="row">
             <h5 className="col-lg-12">Bric Certifications</h5>
             <div className="col-lg-8">
               <ul>
-                <li>{this.props.producers.bricCertification}</li>
+                <li>{this.props.producer.bricCertification}</li>
               </ul>
             </div>
             <h5 className="col-lg-12">Work Experience</h5>
             <div className="col-lg-8">
               <ul>
-                <li>{this.props.producers.workExperience}</li>
+                <li>{this.props.producer.workExperience}</li>
               </ul>
               <div>
             <a>
