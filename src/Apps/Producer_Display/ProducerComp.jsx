@@ -1,7 +1,8 @@
 import React from 'react';
+import ProducerTempComp from "./ProducerTemplate.jsx"
 
 
-class ProducerComp extends React.Component{
+class ProducerTempComp extends React.Component{
       
     render () {
       return (
@@ -37,4 +38,4 @@ class ProducerComp extends React.Component{
   
   };
   
-  export default ProducerComp;
+  export default ProducerTempComp;
