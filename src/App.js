@@ -16,7 +16,7 @@ class App extends React.Component{
     return (
       <React.Fragment>
         <header>
-          <img src="https://www.dropbox.com/s/zh6tgeyqvnffw33/broadcastCamcorder.jpg?raw=1" className="App-logo" alt="Camera Image" />
+          <img src="https://www.dropbox.com/s/zh6tgeyqvnffw33/broadcastCamcorder.jpg?raw=1" className="appPic" alt="Camera Image" />
           {/* <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
