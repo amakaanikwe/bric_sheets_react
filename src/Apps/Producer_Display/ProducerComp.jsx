@@ -6,9 +6,9 @@ class ProducerComp extends React.Component{
       
     render () {
       return (
-        <React.Fragment>
-          {this.props.data.map((item, i) => <ProducerTempComp key = {i} coffee = {item} />)}
-        </React.Fragment>
+        <div>
+          {this.props.producers.map((producer, i) => <ProducerTempComp key = {i} producer = {producer} />)}
+        </div>
       )
     }
   
