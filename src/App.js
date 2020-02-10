@@ -30,7 +30,7 @@ class App extends React.Component{
           </a> */}
         </header>
         <section>
-          <ProducerComp data={this.state} />
+          <ProducerComp producers={this.state.producers} />
         </section>
       </React.Fragment>
     );
