@@ -30,7 +30,7 @@ class App extends React.Component{
           </a> */}
         </header>
         <section>
-          {this.props.menu.coffee.map((item, i) => <ProducerComp key = {i} coffee = {item} />)}
+          {this.state.data.map((item, i) => <ProducerComp key = {i} coffee = {item} />)}
         </section>
       </React.Fragment>
     );
