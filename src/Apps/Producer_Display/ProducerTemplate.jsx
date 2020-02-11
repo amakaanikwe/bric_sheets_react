@@ -5,12 +5,12 @@ class ProducerTempComp extends React.Component{
       
     render () {
       return (
-        <section className="container">
+        <section className="container containerStyle borderBottom">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-9">
               <h3>{this.props.producer.firstName + " " + this.props.producer.lastName}</h3>
             </div>
-            <div className="col-lg-4">{this.props.producer.emailAddress}</div>
+            <div className="col-lg-3">{this.props.producer.emailAddress}</div>
           </div>
           <div className="row">
             <h5 className="col-lg-12">Bric Certifications</h5>
