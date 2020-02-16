@@ -2,6 +2,20 @@ import React from 'react';
 
 
 class ProducerTempComp extends React.Component{
+
+    // Pagination
+
+    function pagFunc () {
+        this.currentPage = 1,
+        this.numPerPage = 5,
+        this.maxSize = 5;
+
+        let begin = (($scope.currentPage - 1) * $scope.numPerPage)
+        let end = begin + $scope.numPerPage;
+    
+        $scope.filteredProducers = $scope.producers.slice(begin, end);
+
+    }
       
     render () {
       return (
