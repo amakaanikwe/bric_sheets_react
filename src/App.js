@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import ProducerComp from "./Apps/Producer_Display/ProducerComp.jsx";
+import ProducerComp from "./Apps/Producer_Display/ProducerComponent/ProducerComp.jsx";
 import data from "./data/data.json";
 import './App.css';
 
