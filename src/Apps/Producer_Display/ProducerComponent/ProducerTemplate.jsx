@@ -19,7 +19,7 @@ class ProducerTempComp extends React.Component{
       
     render () {
       return (
-          <React.Fragment>
+          <>
             <section className="container containerStyle borderBottom">
             <div className="row">
                 <div className="col-lg-9">
@@ -50,7 +50,7 @@ class ProducerTempComp extends React.Component{
         <section class="container" >
         <pagination uib-pagination ng-model="currentPage" total-items="producers.length" max-size="maxSize" items-per-page="numPerPage" boundary-links="true"  class="pagination-sm pagination" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
         </section>
-    </React.Fragment>
+    </>
       )
     }
   
