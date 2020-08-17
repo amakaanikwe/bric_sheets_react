@@ -13,7 +13,7 @@ class App extends React.Component{
   }
   render () {
     return (
-      <React.Fragment>
+      <>
         <header>
           <img src="https://www.dropbox.com/s/zh6tgeyqvnffw33/broadcastCamcorder.jpg?raw=1" className="appPic" alt="Camera Image" />
           {/* <p>
@@ -31,7 +31,7 @@ class App extends React.Component{
         <section>
           <ProducerComp producers={this.state.producers} />
         </section>
-      </React.Fragment>
+      </>
     );
   }
 }
