@@ -1,5 +1,5 @@
 import React from 'react';
-import ProducerComp from "./Apps/Producer_Display/ProducerComponent/ProducerComp.jsx";
+import ProducerComp from "./Components/Producer_Display/ProducerComponent/ProducerComp.jsx";
 import data from "./data/data.json";
 import './App.css';
 
