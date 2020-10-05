@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Job = () => (
+const Job = ({match}) => (
     <>
     <header>
         <h1>Hello Job!</h1>
