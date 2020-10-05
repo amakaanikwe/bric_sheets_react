@@ -5,7 +5,7 @@ import HomeIndexComp from "./Components/Home_Page/HomeComp.jsx";
 import About from "./Components/Home_Page/About.jsx";
 import NavBar from "./Components/Home_Page/NavBar.jsx";
 import JobsList from "./Components/Job_Search/JobsList.jsx";
-import JobPage from "./Components/Job_Search/JobPage.jsx";
+import Job from "./Components/Job_Search/JobPage.jsx";
 import './App.css';
 
 class App extends React.Component{
@@ -17,7 +17,7 @@ class App extends React.Component{
         <Route path="/" component={HomeIndexComp} exact/>
         <Route path="/about" component={About} />
         <Route path="/job-list" component={JobsList} />
-        <Route path="/Job" component={JobPage} />
+        <Route path="/Job" component={Job} />
       </Router>
     );
   }
