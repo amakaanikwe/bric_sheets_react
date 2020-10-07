@@ -1,7 +1,7 @@
 import React from 'react';
 import samplePosts from './samplePosts';
 import JobsListComp from '../ReuseComponents/JobsListComp.jsx'
-import NotFoundPage from "../Components/Home_Page/NotFoundPage.jsx";
+import NotFoundPage from "../Home_Page/NotFoundPage.jsx";
 
 const JobPage = ({ match }) => {
   const name = match.params.name;
