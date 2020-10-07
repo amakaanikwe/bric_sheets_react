@@ -1,13 +1,14 @@
 import React from 'react';
 import samplePosts from './samplePosts';
 import JobsListComp from '../ReuseComponents/JobsListComp.jsx'
+import NotFoundPage from "../Components/Home_Page/NotFoundPage.jsx";
 
 const JobPage = ({ match }) => {
   const name = match.params.name;
   const job = samplePosts.find(job => job.name === name);
 
 
-  if (!job) return <h1>Job does not exist!</h1>
+  if (!job) return <NotFoundPage />
   
   // Will grab all posts excep the one you are on
   const otherPosts = samplePosts.filter(post => post.name !== name);
