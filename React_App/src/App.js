@@ -18,7 +18,7 @@ class App extends React.Component{
           <Route path="/" component={HomeIndexComp} exact/>
           <Route path="/about" component={About} />
           <Route path="/job-list" component={JobsListPage} />
-          <Route path="/Job/:name" component={JobPage} />
+          <Route path="/job/:name" component={JobPage} />
           {/* 
             if you don't give a route a path like below, it will always match by default .
             Switch makes sure only one route is rendered at a time. Not Found page needs to be last.
