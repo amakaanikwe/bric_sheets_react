@@ -22,14 +22,17 @@ app.post('/api/job/:name/upvote', (req, res) => {
 
     // access this field using the above url :name parameter
     const jobName = req.params.name;
+     
 
     jobsInfo[jobName].upvotes += 1;
 
     // send message to client how many upvotes Job has. jobInfo with key article name
-    res.status(200).send(`${jobName} now has ${jobsInfo[jobName].upvotes} upvotes`)
+    res.status(200).send(`${jobName} now has ${jobsInfo[jobName].upvotes} upvotes`);
 })
 
 app.listen(8000, () => console.log('Listening on port 8000'));
 
 // Code to run node
 // npx babel-node src/server.js
+// npx nodemon --exec npx babel-node src/server.js
+// npm start
