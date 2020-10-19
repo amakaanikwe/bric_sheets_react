@@ -4,6 +4,7 @@ import JobsListComp from '../ReuseComponents/JobsListComp.jsx'
 import NotFoundPage from "../Home_Page/NotFoundPage.jsx";
 
 const JobPage = ({ match }) => {
+
   const name = match.params.name;
   const job = samplePosts.find(job => job.name === name);
 
