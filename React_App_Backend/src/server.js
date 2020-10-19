@@ -22,6 +22,27 @@ const app = express();
 
 app.use(bodyParser.json());
 
+// Steps for making queries to local MongoDB database
+app.get('/api/job/:name', async (req, res) => {
+    try {
+        const jobName = req.params.name;
+        // ****Update url field****
+        const client = await MongoClient.connect('MongoDatabase you want to connect to', { useNewUrlParser: true });
+        // ****Update database-name field***
+        const db = client.db('Database-Name')
+    
+        // query the database
+        const jobsInfo = await db.collection('Jobs').findOne({ name: jobName })
+        res.status(200).json(jobInfo);
+    
+        client.close();
+    } catch (err) {
+        res.status(500).json({ message: 'Error connection to db', err});
+    }
+
+
+})
+
 app.post('/api/job/:name/upvote', (req, res) => {
 
     // access this field using the above url :name parameter
