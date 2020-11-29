@@ -1,7 +1,7 @@
 import React from 'react';
-import ProducerComp from "./Components/Producer_Display/ProducerComponent/ProducerComp.jsx";
-import data from "../data/data.json";
-import './App.css';
+import ProducerComp from "./ProducerComp.jsx";
+import data from "../../../data/data.json";
+import '../../../App.css';
 
 class ProducerIndexComp extends React.Component{
   constructor(props) {
