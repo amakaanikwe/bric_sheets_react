@@ -15,7 +15,7 @@ class ProducerIndexComp extends React.Component{
     return (
       <>
         <header>
-          <img src="https://www.dropbox.com/s/zh6tgeyqvnffw33/broadcastCamcorder.jpg?raw=1" className="appPic" alt="Camera Image" />
+          <h1>Producer Search</h1>
           {/* <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
