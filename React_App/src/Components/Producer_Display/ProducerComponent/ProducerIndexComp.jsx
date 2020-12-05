@@ -1,38 +1,25 @@
 import React from 'react';
+import { useState, useEffect } from "react-redux";
 import ProducerComp from "./ProducerComp.jsx";
 import data from "../../../data/data.json";
 import '../../../App.css';
 
-class ProducerIndexComp extends React.Component{
-  constructor(props) {
-    super(props);
-      this.state = {
-        producers: data
-      }
+const ProducerIndexComp = () =>{
 
-  }
-  render () {
+      // this.state = {
+      //   producers: data
+      // }
+
+  
     return (
       <>
         <header>
           <h1>Producer Search</h1>
-          {/* <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a> */}
         </header>
         <section>
-          <ProducerComp producers={this.state.producers} />
+          <ProducerComp producers={data} />
         </section>
       </>
     );
-  }
 }
 export default ProducerIndexComp;
