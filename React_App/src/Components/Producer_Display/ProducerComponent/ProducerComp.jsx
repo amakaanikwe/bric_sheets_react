@@ -2,15 +2,15 @@ import React from 'react';
 import ProducerTempComp from "./ProducerTemplate.jsx"
 
 
-class ProducerComp extends React.Component{
+const ProducerComp = ({producers}) => {
       
-    render () {
+
       return (
         <div>
-          {this.props.producers.map((producer, i) => <ProducerTempComp key = {i} producer = {producer} />)}
+          {producers.map((producer, i) => <ProducerTempComp key = {i} producer = {producer} />)}
         </div>
       )
-    }
+
   
   };
   
