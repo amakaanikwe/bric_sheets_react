@@ -10,14 +10,18 @@ const ProducerIndexComp = () =>{
       const [currentPage, setCurrentPage] = useState(1);
       const [postsPerPage, setPostsPerPage] = useState(10);
 
-  
+    // get current posts
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
+
     return (
       <>
         <header>
           <h1>Producer Search</h1>
         </header>
         <section>
-          <ProducerComp producers={data} />
+          <ProducerComp producers={currentPosts} />
         </section>
       </>
     );
