@@ -1,14 +1,14 @@
-import React from 'react';
-import { useState, useEffect } from "react-redux";
-import ProducerComp from "./ProducerComp.jsx";
+import React, { useState, useEffect } from 'react';
+import ProducerComp from "./ProducerComp.jsx"
 import data from "../../../data/data.json";
 import '../../../App.css';
 
 const ProducerIndexComp = () =>{
 
-      // this.state = {
-      //   producers: data
-      // }
+      const [producers, setProducers] = useState();
+      const [loading, setLoading] = useState(false);
+      const [currentPage, setCurrentPage] = useState(1);
+      const [postsPerPage, setPostsPerPage] = useState(10);
 
   
     return (
