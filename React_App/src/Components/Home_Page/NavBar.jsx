@@ -8,13 +8,13 @@ const NavBar = () => (
                 <Link to="/">Home</Link>
             </li>
             <li>
-                <Link to="/about">About</Link>
+                <Link to="/Job-list">Find a Job</Link>
             </li>
             <li>
-                <Link to="/Job-list">Job Post</Link>
+                <Link to="/producer-display">Find Your Crew</Link>
             </li>
             <li>
-                <Link to="/producer-display">Producers</Link>
+                <Link to="/about">Post a Job</Link>
             </li>
         </ul>
     </nav>
