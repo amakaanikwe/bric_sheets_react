@@ -14,7 +14,7 @@ const NavBar = () => (
                 <Link to="/producer-display">Find Your Crew</Link>
             </li>
             <li>
-                <Link to="/about">Post a Job</Link>
+                <Link to="/post-job">Post a Job</Link>
             </li>
         </ul>
     </nav>
