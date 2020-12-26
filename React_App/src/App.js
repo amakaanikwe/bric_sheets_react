@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import HomeIndexComp from "./Components/Home_Page/HomeComp.jsx";
-import About from "./Components/Home_Page/About.jsx";
+import PostJob from "./Components/Post_Job/PostJob.jsx";
 import NavBar from "./Components/Home_Page/NavBar.jsx";
 import JobsListPage from "./Components/Job_Search/JobsListPage.jsx";
 import JobPage from "./Components/Job_Search/JobPage.jsx";
@@ -17,7 +17,7 @@ class App extends React.Component{
         <NavBar />
         <Switch>
           <Route path="/" component={HomeIndexComp} exact/>
-          <Route path="/about" component={About} />
+          <Route path="/post-job" component={PostJob} />
           <Route path="/job-list" component={JobsListPage} />
           <Route path="/job/:name" component={JobPage} />
           <Route path="/producer-display" component={ProducerPage} />
