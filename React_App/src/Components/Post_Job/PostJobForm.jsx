@@ -9,6 +9,13 @@ const PostJobForm = () => {
    const formChangeHandler = (e) => {
         let name = e.target.name;
         let val = e.target.value;
+
+        if (name ==="age") {
+            if(!Number(val)) {
+                alert("Your age must be a number");
+            }
+        }
+        
         setEntry({...entry, [name]: val});
    }
 
