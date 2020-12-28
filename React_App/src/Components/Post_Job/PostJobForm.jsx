@@ -6,28 +6,34 @@ const PostJobForm = () => {
     const [entry, setEntry] = useState(initialState);
     const {username, age} = entry;
 
-   const myChangeHandler = (event) => {
-        let name = event.target.name;
-        let val = event.target.value;
-        setEntry({[name]: val});
+   const formChangeHandler = (e) => {
+        let name = e.target.name;
+        let val = e.target.value;
+        setEntry({...entry, [name]: val});
+   }
+
+   const formSubmitHandler = (e) => {
+        e.preventDefault();
+        alert(`You have submitted a form ${username} ${age}`);
    }
 
    return (
         <>
-            <form>
-            <h1>Hello {username} {age}</h1>
-        <p>Enter your name:</p>
-        <input
-            type='text'
-            name='username'
-            onChange={myChangeHandler}
-        />
-        <p>Enter your age:</p>
-        <input
-            type='text'
-            name='age'
-            onChange={myChangeHandler}
-        /> 
+            <form onSubmit={formSubmitHandler}>
+                <h1>Hello {username} {age}</h1>
+                <p>Enter your name:</p>
+                <input
+                type='text'
+                name='username'
+                onChange={formChangeHandler}
+            />
+                <p>Enter your age:</p>
+                <input
+                type='text'
+                name='age'
+                onChange={formChangeHandler}
+            /> 
+                <input type="submit" />
             </form>
         </>
 
