@@ -15,7 +15,7 @@ const PostJobForm = () => {
                 alert("Your age must be a number");
             }
         }
-        
+
         setEntry({...entry, [name]: val});
    }
 
@@ -28,7 +28,7 @@ const PostJobForm = () => {
         <>
             <form onSubmit={formSubmitHandler}>
                 <h1>Hello {username} {age}</h1>
-                <p>Enter your name:</p>
+                <p>Enter Job Title:</p>
                 <input
                 type='text'
                 name='username'
