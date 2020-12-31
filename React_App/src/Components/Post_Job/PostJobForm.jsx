@@ -34,10 +34,16 @@ const PostJobForm = () => {
                 name='username'
                 onChange={formChangeHandler}
             />
-                <p>Enter your age:</p>
+                <p>Job Type:</p>
                 <input
                 type='text'
                 name='age'
+                onChange={formChangeHandler}
+            /> 
+             <p>Job Description:</p>
+                <input
+                type='text'
+                name='details'
                 onChange={formChangeHandler}
             /> 
                 <input type="submit" />
