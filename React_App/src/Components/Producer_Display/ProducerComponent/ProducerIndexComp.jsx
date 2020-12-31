@@ -22,7 +22,7 @@ const ProducerIndexComp = () =>{
     return (
       <>
         <header>
-          <h1>Producer Search</h1>
+          <h1>Let's Find You a Crew</h1>
         </header>
         <section>
           <ProducerComp producers={currentPosts} />
