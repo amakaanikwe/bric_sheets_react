@@ -6,7 +6,7 @@ import samplePosts from './samplePosts';
 const JobsListPage = () => (
     <>
     <header>
-        <h1>Hello Jobs List!</h1>
+        <h1>Let's Find You a Job</h1>
         <JobsListComp posts={ samplePosts } />
       
     </header>
