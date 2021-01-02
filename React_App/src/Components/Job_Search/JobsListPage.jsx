@@ -5,11 +5,14 @@ import samplePosts from './samplePosts';
 
 const JobsListPage = () => (
     <>
-    <header>
-        <h1>Let's Find You a Job</h1>
-        <JobsListComp posts={ samplePosts } />
-      
-    </header>
+    <section className="container">
+      <header className="header">
+          <h1>Let's Find Your Next Job</h1>
+          
+      </header>
+      <JobsListComp  posts={ samplePosts } />
+    </section>
+
   </>
 )
 
