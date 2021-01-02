@@ -14,7 +14,7 @@ const NavBar = () => (
             <li>
                 <Link to="/producer-display">Find Your Crew</Link>
             </li>
-            <li>
+            <li style={{float: "right"}}>
                 <Link to="/post-job">Post a Job</Link>
             </li>
         </ul>
