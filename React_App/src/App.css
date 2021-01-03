@@ -9,7 +9,6 @@ body {
 }
 
 /* NavBar */
-
 nav.navbar {
   background-color: #333;
   padding: 0;
@@ -39,49 +38,104 @@ nav.navbar {
 .header {
   text-align: center;
 }
-
-.containerStyle {
-  margin: 60px 140px;
-  padding: 20px;
-  border-style: solid;
-}
-
 #header {
   font-size: 50px;
   padding-top: 130px;
 }
-
 .producerIndexHeader {
   text-align: center;
   padding-top: 50px;
 }
 
+/* Section Style */
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-/* Button Style */
-.borderBottom {
-  border-bottom: 10px;
-}
-.btn {
-  border-style: solid;
-}
-#mailbutton {
-  float: right;
-}
-
-
 .container {
-  margin: 50px;
+  display:block;
+  margin: 50px 15%;
   /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
 
+}
+.jobListSection a {
+  display: block;
+  margin: 30px;
+  padding: 20px;
+  color: black;
+  background-color: #dedede;
+}
+.jobListSection a:hover {
+  color: white;
+  background-color: #716f6f;
+}
+.jobPageStyle {
+  margin: 60px 140px;
+  padding: 20px;
+  background-color: #dedede;
+}
+.jobPageStyle h1 {
+  text-align: center;
+  margin: 15px
+}
+.jobPageStyle p {
+  margin: 15px;
+  padding: 15px;
+}
+.jobPageStyle h3 {
+  margin: 15px;
+  padding: 10px;
+}
+.jobPageStyle a {
+  margin: 30px;
+  display: block;
+  color: black;
+  background-color: #fbfbfb;
+}
+.producerTempStyle {
+  display: block;
+  margin: 30px 80px;
+  padding: 30px;
+  color: black;
+  background-color: #dedede;
+}
+.producerTempStyle h3 {
+  padding: 20px;
+}
+.producerListStyle {
+  margin: 20px;
+  padding: 20px;
+  color: white;
+  background-color: #8c8c8e;
+}
+.producerTempStyle h5 {
+  padding: 10px 30px;
+}
+.producerTempStyle a {
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.producerTempStyle button {
+  border-radius: 5px;
+}
+
+form {
+  margin: 50px 15%;
+
+}
+
+/* Button Style */
+.btn {
+  border-style: solid;
+}
+#mailbutton {
+  float: right;
 }
 
 /* Pagination Style */
