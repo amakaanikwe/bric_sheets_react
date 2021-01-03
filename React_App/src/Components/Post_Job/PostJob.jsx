@@ -3,10 +3,13 @@ import PostJobForm from './PostJobForm.jsx';
 
 const PostJob = () => (
     <>
-    <header>
-        <h1>Post a Job</h1>
-    </header>
-    <PostJobForm />
+    <section className="container">
+      <header className="header">
+          <h1>Post a Job</h1>
+      </header>
+      <PostJobForm />
+    </section>
+
   </>
 )
 
