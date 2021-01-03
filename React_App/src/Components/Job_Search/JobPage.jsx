@@ -27,14 +27,14 @@ const JobPage = ({ match }) => {
 
   return (
     <>
-    <header>
+    <section className="jobPageStyle borderBottom">
         <h1> {job.title} </h1>
         <p>Upvotes {jobInfo.upvotes} </p>
         <p> {job.job_info} </p>
         <h3>Other Posts</h3>
         {/* Shows how to reuse comp using diff prop */}
         <JobsListComp posts={ otherPosts } />
-    </header>
+    </section>
   </>
   )
 
