@@ -21,10 +21,11 @@ const ProducerIndexComp = () =>{
 
     return (
       <>
-        <header>
-          <h1>Let's Find You a Crew</h1>
+      <section>
+        <header className="producerIndexHeader">
+          <h1>Let's Find Your Crew</h1>
         </header>
-        <section>
+        
           <ProducerComp producers={currentPosts} />
           <Pagination 
             postsPerPage={postsPerPage} 
