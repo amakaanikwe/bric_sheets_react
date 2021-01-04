@@ -28,24 +28,48 @@ const PostJobForm = () => {
         <>
             <form onSubmit={formSubmitHandler}>
                 <h1>Hello {username} {age}</h1>
-                <p>Enter Job Title:</p>
+                <p>Job Title:</p>
                 <input
                 type='text'
                 name='username'
                 onChange={formChangeHandler}
             />
-                <p>Enter Job Type:</p>
+
+                <p>Company:</p>
                 <input
                 type='text'
                 name='age'
                 onChange={formChangeHandler}
             /> 
+                <p>Enter Job Type:</p>
+                <input
+                type='text'
+                name='XXXXX'
+                onChange={formChangeHandler}
+            /> 
+
              <p>Enter Job Description:</p>
                 <input
                 type='text'
                 name='details'
                 onChange={formChangeHandler}
             /> 
+
+            <h4>Your Contact Info</h4>
+            <p>Phone:</p>
+                <input
+                type='text'
+                name='XXXXX'
+                onChange={formChangeHandler}
+            /> 
+
+             <p>E-Mail:</p>
+                <input
+                type='text'
+                name='XXXXXX'
+                onChange={formChangeHandler}
+            /> 
+                {/* NOTE: Maybe change this to button? */}
                 <input type="submit" />
             </form>
         </>
