@@ -26,50 +26,61 @@ const PostJobForm = () => {
 
    return (
         <>
-            <form onSubmit={formSubmitHandler}>
+            <form className="container" onSubmit={formSubmitHandler}>
                 <h1>Hello {username} {age}</h1>
-                <p>Job Title:</p>
-                <input
-                type='text'
-                name='username'
-                onChange={formChangeHandler}
-            />
-
-                <p>Enter Job Type:</p>
-                    <input
-                    type='text'
-                    name='XXXXX'
-                    onChange={formChangeHandler}
-                /> 
-
                 <p>Company:</p>
-                    <input
-                    type='text'
-                    name='age'
-                    onChange={formChangeHandler}
-                /> 
-             <p>Enter Job Description:</p>
-                <textarea                 
-                    type='text'
-                    name='details'
-                    onChange={formChangeHandler}>Some text...</textarea>
-
+                        <input
+                        type='text'
+                        name='age'
+                        onChange={formChangeHandler}/> 
+                <div className="row">
+                    <div className="col-lg-6">
+                        <p>Job Title:</p>
+                        <input
+                            type='text'
+                            name='XXXXX'
+                            onChange={formChangeHandler}/> 
+                    </div>
+                    <div className="col-lg-6">
+                        <p>Job Type:</p>
+                        <input
+                        type='text'
+                        name='username'
+                        onChange={formChangeHandler}/>
+                    </div>
+                </div>
+          
+             <p>Job Description:</p>
+             <div className="row">
+                 <div className="col-lg-12">
+                    <textarea  
+                        className="jobFormTextarea"          
+                        type='text'
+                        name='details'
+                        onChange={formChangeHandler}>Add text...</textarea>
+                 </div>
+             </div>
             <h4>Your Contact Info</h4>
-            <p>Phone:</p>
-                <input
-                type='text'
-                name='XXXXX'
-                onChange={formChangeHandler}
-            /> 
 
-             <p>E-Mail:</p>
-                <input
-                type='text'
-                name='XXXXXX'
-                onChange={formChangeHandler}
-            /> 
+            <div className="row">
+                    <div className="col-lg-6">
+                    <p>Phone:</p>
+                    <input
+                        type='text'
+                        name='XXXXX'
+                        onChange={formChangeHandler}/> 
+                    </div>
+                    <div className="col-lg-6">
+                        <p>E-Mail:</p>
+                        <input
+                            type='text'
+                            name='XXXXXX'
+                            onChange={formChangeHandler}/> 
+                    </div>
+                </div>
+
                 {/* NOTE: Maybe change this to button? */}
-                <input type="submit" />
+                <button type="submit">Submit</button>
             </form>
         </>
 
