@@ -128,12 +128,6 @@ form h1 {
   resize: none;
 }
 
-/* Responsive layout - makes a one column-layout instead of two-column layout */
-/* @media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  } */
-
 /* Button Style */
 .btn {
   border-style: solid;
@@ -164,11 +158,4 @@ form h1 {
   font-size: 30px;
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
