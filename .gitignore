@@ -11,6 +11,7 @@ React_App_Backend/node_modules
 
 # production
 /build
+/React_App_Backend/.env
 
 # misc
 .DS_Store
