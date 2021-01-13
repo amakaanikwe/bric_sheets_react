@@ -1,4 +1,17 @@
 import express from 'express';
 const app = express();
+import { MongoServerSelectionError } from 'mongodb';
+const mongoose = require('mongoose');
+// require('dotenv').config({ path: './env' })
+const dotenv = require('dotenv');
+const routesUrls = require('./routes/routes');
+const cors = require('cors');
 
-app.listen(4000, ()=> console.log('Sevrer is running...'))
+dotenv.config();
+
+mongoose.connect(process.env.DATABASE_ACCESS, () => console.log("Database is connected"));
+
+app.use(express.json());
+app.use(cors());
+app.use('/app', routesUrls);
+app.listen(4000, ()=> console.log('server is running...'))
