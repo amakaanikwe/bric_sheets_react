@@ -6,6 +6,9 @@ React_App_Backend/node_modules
 /.pnp
 .pnp.js
 
+# Images
+React_App/src/Components/Home_Page/warren-wong-pfmaMGZSby4-unsplash.jpg
+
 # testing
 /coverage
 
