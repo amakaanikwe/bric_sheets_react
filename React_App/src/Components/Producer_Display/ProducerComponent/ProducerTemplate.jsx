@@ -1,9 +1,8 @@
 import React from 'react';
 
 
-class ProducerTempComp extends React.Component{
+const ProducerTempComp = () => {
    
-    render () {
       return (
           <>
             <section className="producerTempStyle">
@@ -36,7 +35,7 @@ class ProducerTempComp extends React.Component{
         </section>
     </>
       )
-    }
+
   
   };
   
