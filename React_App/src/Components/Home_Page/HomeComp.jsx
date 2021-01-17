@@ -10,12 +10,17 @@ const HomeIndexComp = () => {
       <>
         <header className="container header">
             <h1>Hello World!</h1>
+          <secton>
+            <div className='hero'>
+              <img className='homeImage' src={backLogo} alt='film camera'/>
+              <h1 className='headline'>Filmmakers Portal</h1>
+              <button>Enter</button>
+            </div>
+          </secton>
         </header>
-        <secton>
-          <div className='hero'>
-            <img className='homeImage' src={backLogo} alt='film camera'/>
-          </div>
-        </secton>
+
+        <div className='slider'></div>
+        
       </>
     );
   
