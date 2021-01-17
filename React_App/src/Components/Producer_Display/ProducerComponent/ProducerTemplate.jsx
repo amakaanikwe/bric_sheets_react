@@ -1,28 +1,28 @@
 import React from 'react';
 
 
-const ProducerTempComp = () => {
+const ProducerTempComp = ({producer}) => {
    
       return (
           <>
             <section className="producerTempStyle">
             <div className="row">
                 <div className="col-lg-9">
-                <h3>{this.props.producer.firstName + " " + this.props.producer.lastName}</h3>
+                <h3>{producer.firstName + " " + producer.lastName}</h3>
                 </div>
-                <div className="col-lg-3">{this.props.producer.emailAddress}</div>
+                <div className="col-lg-3">{producer.emailAddress}</div>
             </div>
             <div className="row producerListStyle">
                 <h5 className="col-lg-12">Bric Certifications</h5>
                 <div className="col-lg-8">
                 <ul>
-                    <li>{this.props.producer.bricCertification}</li>
+                    <li>{producer.bricCertification}</li>
                 </ul>
                 </div>
                 <h5 className="col-lg-12">Work Experience</h5>
                 <div className="col-lg-8">
                 <ul>
-                    <li>{this.props.producer.workExperience}</li>
+                    <li>{producer.workExperience}</li>
                 </ul>
         </div>
  
