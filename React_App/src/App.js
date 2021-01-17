@@ -9,18 +9,17 @@ import ProducerPage from "./Components/Producer_Display/ProducerComponent/Produc
 import NotFoundPage from "./Components/Home_Page/NotFoundPage.jsx";
 import './App.css';
 
-class App extends React.Component{
+const App =()=> {
 
-  render () {
     return (
       <Router>
         <NavBar />
         <Switch>
           <Route path="/" component={HomeIndexComp} exact/>
-          <Route path="/post-job" component={PostJob} />
           <Route path="/job-list" component={JobsListPage} />
           <Route path="/job/:name" component={JobPage} />
           <Route path="/producer-display" component={ProducerPage} />
+          <Route path="/post-job" component={PostJob} />
           {/* 
             if you don't give a route a path like below, it will always match by default .
             Switch makes sure only one route is rendered at a time. Not Found page needs to be last.
@@ -31,7 +30,7 @@ class App extends React.Component{
 
       </Router>
     );
-  }
+
 }
 export default App;
 
