@@ -1,8 +1,10 @@
 import React from 'react';
 import PostJobForm from './PostJobForm.jsx';
+import Banner from '../ReuseComponents/BannerComp.jsx'
 
 const PostJob = () => (
     <>
+    <Banner />
     <section className="container">
       <header className="header">
           <h1>Post a Job</h1>
