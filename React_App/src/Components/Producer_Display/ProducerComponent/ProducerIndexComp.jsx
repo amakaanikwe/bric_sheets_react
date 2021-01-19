@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProducerComp from "./ProducerComp.jsx"
 import Pagination from "../../ReuseComponents/Pagination.jsx";
+import Banner from '../../ReuseComponents/BannerComp.jsx';
 import data from "../../../data/data.json";
 import '../../../App.css';
 
@@ -21,6 +22,7 @@ const ProducerIndexComp = () =>{
 
     return (
       <>
+      <Banner />
       <section>
         <header className="producerIndexHeader">
           <h1>Let's Find Your Crew</h1>
