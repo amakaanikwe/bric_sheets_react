@@ -1,0 +1,96 @@
+header h1 {
+    color: white;
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#769695ad, white);
+    z-index: -1;
+}
+
+section.homeSection {
+    position: relative;
+}
+
+.hero {
+    width: 80%;
+    height: 80%
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headline {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    font-size: 100px;
+    transform: translate(-205, -70%);
+}
+h1.textBorder {
+    display: block;
+    border: 1px solid white;
+    margin-left: 20px
+}
+
+
+
+/* Grid Set up */
+
+.section1 {grid-area: username;}
+.section2 {grid-area: password;}
+.section3 {grid-area: button;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'username'
+        'password'
+        'button';
+    grid-gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-205, -70%);
+}
+.homeSection {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeUser{
+    display: block;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 7%;
+}
+.homePass{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 7%;
+}
+.homeButton {
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.homeButton:hover {
+    color: 769695ad;
+    background: #769695ad;
+}
+
+button.homeButton {
+    border-radius: 10%;
+}
