@@ -29,7 +29,7 @@ const ProducerTempComp = ({producer}) => {
         </div>
         <div>
                 <a>
-                <button type="button" className="btn-info">more details</button>
+                <button type='button' className="producerButton">more details</button>
             </a>
             </div>
         </section>
