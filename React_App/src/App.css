@@ -150,8 +150,14 @@ nav.navbar {
 }
 
 /* Form style */
+.form-title {
+  margin: 30px;
+}
 form h1 {
   text-align: center;
+}
+form h4 {
+  margin:20px 0px;
 }
 .jobFormTextarea {
   display: block;
@@ -159,6 +165,28 @@ form h1 {
   height: 150px;
   padding: 12px 20px;
   resize: none;
+}
+.formContainer {
+  background-color: #0000001f;
+  padding: 40px;
+}
+
+form p {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.formButton {
+  margin: 40px 0px;
+  font-size: 20px;
+  color: #0cbfb9;
+  background-color: transparent;
+  border: 1px solid #0cbfb9;
+  border-radius: 6px;
+  float: left;
+}
+.formButton:hover {
+  color: #004846;
+  border: 1px solid #004846;
 }
 
 /* Button Style */
