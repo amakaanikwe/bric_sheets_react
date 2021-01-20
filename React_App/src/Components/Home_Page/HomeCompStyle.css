@@ -1,6 +1,4 @@
-header h1 {
-    color: white;
-}
+
 .slider {
     position: absolute;
     top: 0;
@@ -30,6 +28,7 @@ section.homeSection {
     position: absolute;
     top: 20%;
     left: 0%;
+    color: white;
     font-size: 100px;
     transform: translate(-205, -70%);
 }
@@ -38,8 +37,18 @@ h1.textBorder {
     border: 1px solid white;
     margin-left: 20px
 }
-
-
+.homeSection {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.homeGrid {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-205, -70%);
+}
 
 /* Grid Set up */
 
@@ -55,26 +64,17 @@ h1.textBorder {
         'button';
     grid-gap: 10px;
     padding: 10px;
-    position: absolute;
-    top: 55%;
-    left: 60%;
-    transform: translate(-205, -70%);
-}
-.homeSection {
-    display: flex;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
 }
 
 .homeUser{
-    display: block;
+    padding: 4px;
     color: white;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 7%;
 }
 .homePass{
+    padding: 4px;
     color: white;
     background-color: transparent;
     border: 1px solid white;
