@@ -26,8 +26,9 @@ const PostJobForm = () => {
 
    return (
         <>
-            <form className="container" onSubmit={formSubmitHandler}>
-                <h1>Hello {username} {age}</h1>
+        <div className="formContainer">
+            <form onSubmit={formSubmitHandler}>
+                {/* <h1>Hello {username} {age}</h1> */}
                 <p>Company:</p>
                         <input
                         type='text'
@@ -60,28 +61,37 @@ const PostJobForm = () => {
                         onChange={formChangeHandler}>Add text...</textarea>
                  </div>
              </div>
-            <h4>Your Contact Info</h4>
+            <h4>Your Contact Info:</h4>
 
             <div className="row">
-                    <div className="col-lg-6">
+                <div className="col-lg-6">
                     <p>Phone:</p>
                     <input
                         type='text'
                         name='XXXXX'
                         onChange={formChangeHandler}/> 
-                    </div>
-                    <div className="col-lg-6">
+                </div>
+                <div className="col-lg-6">
+                    <div className='row'>
+                        <div className="col-sm-12">
                         <p>E-Mail:</p>
                         <input
                             type='text'
                             name='XXXXXX'
-                            onChange={formChangeHandler}/> 
+                            onChange={formChangeHandler}/>
+                        </div>
+                        <div className="col-sm-12">
+                        <button className='formButton' type="submit">Submit</button>
+                        </div>
                     </div>
+                             
                 </div>
+                   
+            </div>
 
-                {/* NOTE: Maybe change this to button? */}
-                <button type="submit">Submit</button>
+                
             </form>
+            </div>
         </>
 
    )
