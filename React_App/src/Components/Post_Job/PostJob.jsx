@@ -7,7 +7,7 @@ const PostJob = () => (
     <Banner />
     <section className="container">
       <header className="header">
-          <h1>Post a Job</h1>
+          <h1 className='form-title'>Post a Job</h1>
       </header>
       <PostJobForm />
     </section>
