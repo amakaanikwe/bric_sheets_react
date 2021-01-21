@@ -15,7 +15,9 @@ section.homeSection {
 
 .hero {
     width: 80%;
-    height: 80%
+    height: 80%;
+    position: relative;
+
 }
 
 .hero img {
@@ -24,13 +26,25 @@ section.homeSection {
     object-fit: cover;
 }
 
+.hero::after {
+    content: '';
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.2%;
+}
+
 .headline {
     position: absolute;
-    top: 20%;
-    left: 0%;
+    top: 25%;
+    left: -12%;
     color: white;
     font-size: 100px;
-    transform: translate(-205, -70%);
+    transform: translate(-20%, -70%);
+    /* z-index: 3; */
 }
 h1.textBorder {
     display: block;
@@ -45,9 +59,11 @@ h1.textBorder {
 }
 .homeGrid {
     position: absolute;
-    top: 55%;
-    left: 60%;
-    transform: translate(-205, -70%);
+    top: 70%;
+    left: 75%;
+    transform: translate(-20%, -70%);
+    z-index: 3;
+    background-color: #00000082;
 }
 
 /* Grid Set up */
@@ -64,6 +80,7 @@ h1.textBorder {
         'button';
     grid-gap: 10px;
     padding: 10px;
+    z-index: 3;
 }
 
 .homeUser{
@@ -71,24 +88,22 @@ h1.textBorder {
     color: white;
     background-color: transparent;
     border: 1px solid white;
-    border-radius: 7%;
 }
 .homePass{
     padding: 4px;
     color: white;
     background-color: transparent;
     border: 1px solid white;
-    border-radius: 7%;
 }
 .homeButton {
     font-size: 20px;
-    color: white;
+    color: #84efebcf;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #84efebcf;
 }
 .homeButton:hover {
-    color: 769695ad;
-    background: #769695ad;
+    color: #2d6b69cf;
+    border: 1px solid #2d6b69cf;
 }
 
 button.homeButton {
