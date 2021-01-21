@@ -16,7 +16,6 @@ const Registration = () => {
 
     return(
         <>
-        {/* Grid container */}
         <div className='grid-container'>
 
         <div className='section1'>
@@ -36,9 +35,9 @@ const Registration = () => {
             onChange={formChangeHandler}/> 
         </div>
         <div className='section3'>
-        <button className='homeButton'>Log In</button>
+        <button className='homeButton'>Register</button>
         </div>                     
-        </div> {/* end of grid */}
+        </div> 
 
     </>
     )
