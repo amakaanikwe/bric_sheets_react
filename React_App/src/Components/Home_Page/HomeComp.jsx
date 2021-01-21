@@ -1,8 +1,9 @@
 import React, {useRef, useEffect} from 'react';
 import {TweenMax, TimelineMax, Power3} from 'gsap';
-import Login from'./Login.jsx'
-import backLogo from './warren-wong-pfmaMGZSby4-web.jpg'
-import './HomeCompStyle.css'
+import Login from'./Login.jsx';
+import Registration from './Registration.jsx';
+import backLogo from './warren-wong-pfmaMGZSby4-web.jpg';
+import './HomeCompStyle.css';
 
 
 const HomeIndexComp = () => {
@@ -34,7 +35,8 @@ const HomeIndexComp = () => {
                   <h1 className='headline textBorder' ref={head=>{headlineRef=head}}>Filmmaker's Portal</h1>
               </div>
               <div className='homeGrid' ref={grid=>{homeGridRef=grid}} >
-              < Login />  
+              < Login /> 
+              {/* < Registration />  */}
               </div>
                            
             </div>
