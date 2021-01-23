@@ -27,7 +27,7 @@ const HomeIndexComp = () => {
     return (
       <>
         <header className="homeCompStyle">
-          <secton className='homeSection'>
+          <section className='homeSection'>
 
             <div className='hero' ref={hero=>{heroRef=hero}} >
               <img className='homeImage' src={backLogo} alt='film camera'/>
@@ -41,7 +41,7 @@ const HomeIndexComp = () => {
                            
             </div>
 
-          </secton>
+          </section>
         </header>
 
         <div className='slider' ref={slide=>{sliderRef=slide}}></div>
