@@ -21,7 +21,7 @@ const App =()=> {
           <Route path="/producer-display" component={ProducerPage} />
           <Route path="/post-job" component={PostJob} />
           {/* 
-            if you don't give a route a path like below, it will always match by default .
+            if you don't give a route a path like below, it will always match by default.
             Switch makes sure only one route is rendered at a time. Not Found page needs to be last.
           */}
           <Route component={NotFoundPage} />
