@@ -23,31 +23,28 @@
   object-fit: cover;
 }
 
-/* NavBar */
+/* NavBar  */
 nav.navbar {
-  background-color: #769695ad;
-  padding: 0;
+  background-color: #769695ad !important;
 }
 .navbar ul {
-  list-style-type: none;
+  list-style-type: none !important;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-}
+  overflow: hidden !important;
+} 
+
 .navbar ul li {
-  float: left;
+  float: left !important;
 }
 .navbar ul li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: white;
-  background-color: #769695ad;
+  text-decoration: none !important;
+  margin: 5px;
+  color: white !important;
 }
 .navbar ul li a:hover {
-  background-color: #111;
-}
+  background-color: #111 !important;
+} 
 
 /* Headers */
 .header {
