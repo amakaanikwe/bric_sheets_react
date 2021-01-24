@@ -46,6 +46,10 @@ section.homeSection {
     transform: translate(-20%, -70%);
     /* z-index: 3; */
 }
+@media only screen and (max-width:1050px) {
+
+}
+
 h1.textBorder {
     display: block;
     border: 1px solid white;
