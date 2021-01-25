@@ -47,13 +47,49 @@ section.homeSection {
     /* z-index: 3; */
 }
 @media only screen and (max-width:1050px) {
+    .hero{
+        width: 100%;
+    }
+    .headline {
+        transform: translate(0%, 0%) !important;
+    }
+    h1.headline {
+        top: 15px !important;
+        font-size: 9vh !important;
+        width: 80% !important;
+    }
+    .homeGrid {
+        transform: translate(0%, 0%) !important;
+        top: 65% !important;
+        left:65% !important;
+    }
+}
+@media only screen and (max-width:750px) {
 
+    .homeGrid {
+        left:50% !important;
+    }
+}
+@media only screen and (max-width:500px) {
+    h1.headline {
+        padding: 20px !important;
+        font-size: 6vh !important;
+    }
+    .homeGrid {
+        left:30% !important;
+    }
 }
 
+@media only screen and (max-width:365px) {
+    h1.headline {
+        padding: 20px !important;
+        font-size: 5vh !important;
+    }
+}
 h1.textBorder {
     display: block;
     border: 1px solid white;
-    margin-left: 20px
+    margin-left: 20px;
 }
 .homeSection {
     display: flex;
