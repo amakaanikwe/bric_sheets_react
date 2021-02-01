@@ -2,17 +2,17 @@ import React, {useState} from 'react';
 
 const PostJobForm = () => {
 
-    const initialState = { username:"", age:""}
+    const initialState = { company:"", phoneNumber:""}
     const [entry, setEntry] = useState(initialState);
-    const {username, age} = entry;
+    const {company, phoneNumber} = entry;
 
    const formChangeHandler = (e) => {
         let name = e.target.name;
         let val = e.target.value;
 
-        if (name ==="age") {
+        if (name ==="phoneNumber") {
             if(!Number(val)) {
-                alert("Your age must be a number");
+                alert("Your phone number must be a number");
             }
         }
 
@@ -21,7 +21,7 @@ const PostJobForm = () => {
 
    const formSubmitHandler = (e) => {
         e.preventDefault();
-        alert(`You have submitted a form ${username} ${age}`);
+        alert(`You have submitted a form ${company} ${phoneNumber}`);
    }
 
    return (
@@ -32,21 +32,21 @@ const PostJobForm = () => {
                 <p>Company:</p>
                         <input
                         type='text'
-                        name='age'
+                        name='company'
                         onChange={formChangeHandler}/> 
                 <div className="row">
                     <div className="col-lg-6">
                         <p>Job Title:</p>
                         <input
                             type='text'
-                            name='XXXXX'
+                            name='jobTitle'
                             onChange={formChangeHandler}/> 
                     </div>
                     <div className="col-lg-6">
                         <p>Job Type:</p>
                         <input
                         type='text'
-                        name='username'
+                        name='JobType'
                         onChange={formChangeHandler}/>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const PostJobForm = () => {
                     <textarea  
                         className="jobFormTextarea"          
                         type='text'
-                        name='details'
+                        name='jobDetails'
                         onChange={formChangeHandler}>Add text...</textarea>
                  </div>
              </div>
@@ -68,7 +68,7 @@ const PostJobForm = () => {
                     <p>Phone:</p>
                     <input
                         type='text'
-                        name='XXXXX'
+                        name='phoneNumber'
                         onChange={formChangeHandler}/> 
                 </div>
                 <div className="col-lg-6">
@@ -77,7 +77,7 @@ const PostJobForm = () => {
                         <p>E-Mail:</p>
                         <input
                             type='text'
-                            name='XXXXXX'
+                            name='email'
                             onChange={formChangeHandler}/>
                         </div>
                         <div className="col-sm-12">
