@@ -5,9 +5,9 @@ const signUpTemplateCopy = require('../models/SignUpModels');
 router.post("/signup", (req, res)=>{
     const newUser = new signUpTemplateCopy({
         fullName:req.body.fullName,
-        username:req.body.fullName,
-        email:req.body.fullName,
-        password:req.body.fullName,
+        username:req.body.username,
+        email:req.body.email,
+        password:req.body.password,
     })
     newUser.save()
     .then(data=>{
