@@ -2,7 +2,11 @@ import React, {useState} from 'react';
 
 const PostJobForm = () => {
 
-    const initialState = { company:"", phoneNumber:""}
+    const initialState = { 
+        company:"", 
+        phoneNumber:""
+    }
+    
     const [entry, setEntry] = useState(initialState);
     const {company, phoneNumber} = entry;
 
