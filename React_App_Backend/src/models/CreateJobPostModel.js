@@ -2,6 +2,10 @@
 const mongoose = require('mongoose');
 
 const jobPostTemplate = new mongoose.Schema({
+    username:{
+        type:String,
+        requiered:true
+    },
     company:{
         type:String,
         requiered:true
@@ -33,4 +37,4 @@ const jobPostTemplate = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('newUserTable', jobPostTemplate);
+module.exports = mongoose.model('newPostTable', jobPostTemplate);
