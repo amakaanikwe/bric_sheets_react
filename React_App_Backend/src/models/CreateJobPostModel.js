@@ -37,4 +37,4 @@ const jobPostTemplate = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('newPostTable', jobPostTemplate);
+module.exports = mongoose.model('newUserTable', jobPostTemplate);
