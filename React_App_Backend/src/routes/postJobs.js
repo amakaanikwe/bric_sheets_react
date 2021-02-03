@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const createJobTemplateCopy = require('../models/CreateJobModel');
+const createJobTemplateCopy = require('../models/CreateJobPostModel');
 
 router.post("/postjob", (req, res)=>{
     const newPost = new createJobTemplateCopy ({
