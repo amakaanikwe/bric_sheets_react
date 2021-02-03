@@ -4,9 +4,9 @@ import './HomeCompStyle.css'
 const Registration = () => {
 
     // Form Handler
-  const initialState = { username:"", age:""}
+  const initialState = { username:"", password:""}
   const [entry, setEntry] = useState(initialState);
-  const {username, age} = entry;
+  const {username, password} = entry;
   const formChangeHandler = (e) => {
     let name = e.target.name;
     let val = e.target.value;
