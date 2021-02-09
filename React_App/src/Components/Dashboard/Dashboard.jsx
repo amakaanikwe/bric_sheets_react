@@ -14,6 +14,7 @@ const Dashboard = () => {
         <>
             <NavBar />
             
+            <p>Dashboard</p>
 
             <Footer />
         </>
