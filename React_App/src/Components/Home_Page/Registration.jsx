@@ -24,7 +24,7 @@ const Registration = () => {
             },
             withCredentials: true,
             url: 'http://localhost:4000/signup',
-        })
+        }).then((res) => console.log(res));
     };
 
     return(
