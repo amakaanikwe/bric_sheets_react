@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import axios from 'axios';
 import './HomeCompStyle.css'
 
 const Registration = () => {
@@ -14,7 +15,17 @@ const Registration = () => {
     setEntry({...entry, [name]: val});
     }
 
-    const register = () => {};
+    const register = () => {
+        axios({
+            method: "post",
+            data: {
+                username: username,
+                password: password,
+            },
+            withCredentials: true,
+            url: 'http://localhost:4000/signup',
+        })
+    };
 
     return(
         <>
