@@ -14,6 +14,8 @@ const Registration = () => {
     setEntry({...entry, [name]: val});
     }
 
+    const register = () => {};
+
     return(
         <>
         <div className='grid-container'>
@@ -35,7 +37,7 @@ const Registration = () => {
             onChange={formChangeHandler}/> 
         </div>
         <div className='section3'>
-        <button className='homeButton'>Register</button>
+        <button className='homeButton' onClick={register}>Register</button>
         </div>                     
         </div> 
 
