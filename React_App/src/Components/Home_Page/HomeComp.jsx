@@ -12,7 +12,7 @@ const HomeIndexComp = () => {
   let sliderRef = useRef(null)
   let headlineRef = useRef(null)
   let homeGridRef = useRef(null)
-  const tl = new TimelineMax();
+  const tl = gsap.timeline();
 
   useEffect( ()=>{
     tl.fromTo(heroRef,1,{height:"0%"}, {height:"80%", ease: Power3.easeInOut})
