@@ -1,6 +1,6 @@
 # Filmmakers Portal
 
-
+The motivation for this project came from my desire to create a digital space where Brooklyn filmmakers who took classes at Bric Media could easily get together and make films.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
