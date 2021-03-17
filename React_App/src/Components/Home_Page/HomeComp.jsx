@@ -32,7 +32,7 @@ const HomeIndexComp = () => {
             <div className='hero' ref={hero=>{heroRef=hero}} >
               <img className='homeImage' src={backLogo} alt='film camera'/>
               <div>
-                  <h1 className='headline textBorder' ref={head=>{headlineRef=head}}>Filmmaker's Portal</h1>
+                  <h1 className='headline textBorder' ref={head=>{headlineRef=head}}>Filmmakers' Portal</h1>
               </div>
               <div className='homeGrid' ref={grid=>{homeGridRef=grid}} >
               < Login /> 
