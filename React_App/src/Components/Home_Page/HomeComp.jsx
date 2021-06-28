@@ -1,5 +1,5 @@
 import React, {useRef, useEffect} from 'react';
-import {TweenMax, TimelineMax, Power3} from 'gsap';
+import {TweenMax, TimelineMax, Power3, gsap} from 'gsap';
 import Login from'./Login.jsx';
 import Registration from './Registration.jsx';
 import backLogo from './warren-wong-pfmaMGZSby4-web.jpg';
