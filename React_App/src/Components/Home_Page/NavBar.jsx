@@ -21,7 +21,10 @@ const NavBar = () => (
             </li> 
             <li className="nav-item" style={{float: "right"}}>
                 <a className="nav-link" href="#"><Link to="/post-job">Post a Job</Link></a>
-            </li>   
+            </li>  
+            <li className="nav-item" style={{float: "right"}}>
+                <a className="nav-link" href="#"><Link to="/registration">Registration</Link></a>
+            </li> 
             </ul>
         </div>  
     </nav>
