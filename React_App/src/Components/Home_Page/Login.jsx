@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
+import { Link } from "react-router-dom";
 import axios from 'axios';
 import './HomeCompStyle.css'
 
 const Login = () => {
 
-    // Form Handler
+// Form Handler
   const initialState = { username:"", password:""}
   const [entry, setEntry] = useState(initialState);
   const {username, password} = entry;
@@ -15,34 +16,42 @@ const Login = () => {
     setEntry({...entry, [name]: val});
     }
 
-const login = () => {}
+const loginUser = () => {
+    axios({
+        method: "get",
+        withCredentials: true,
+        url: 'http://localhost:4000/signup',
+    }).then((res) => console.log(res));
+
+    //Use res to set up contidional logic
+};
 
     return(
         <>
-        <div className='grid-container'>
+            <form className='grid-container'>
 
-        <div className='section1'>
-        <input
-            className='homeUser'
-            type='text'
-            name='username'
-            value='Username'
-            onChange={formChangeHandler}/>
-        </div>
-        <div className='section2'>
-        <input
-            className='homePass'
-            type='text'
-            name='password'
-            value='Password'
-            onChange={formChangeHandler}/> 
-        </div>
-        <div className='section3'>
-        <button className='homeButton' onClick={login}>Log In</button>
-        </div>                     
-        </div> 
+            <div className='section1'>
+            <input
+                className='homeUser'
+                type='text'
+                name='username'
+                placeholder='Username'
+                onChange={formChangeHandler}/>
+            </div>
+            <div className='section2'>
+            <input
+                className='homePass'
+                type='text'
+                name='password'
+                placeholder='Password'
+                onChange={formChangeHandler}/> 
+            </div>
+            <div className='section3'>
+            <button className='homeButton' onClick={loginUser}>Log In</button>
+            </div>                     
+            </form> 
 
-    </>
+        </>
     )
    
 }

@@ -14,7 +14,7 @@ const Dashboard = () => {
         <>
             <NavBar />
             
-            <p>Dashboard</p>
+            <h1>Dashboard</h1>
 
             <Footer />
         </>
