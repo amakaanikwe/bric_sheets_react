@@ -1,4 +1,4 @@
-import express from 'express';
+const express = require('express');
 const app = express();
 import { MongoServerSelectionError } from 'mongodb';
 const mongoose = require('mongoose');
@@ -10,7 +10,6 @@ const passportlocal = require('passport-local').strategy;
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
 const session = require('express-session');
-const bodyParser = require('body-parser');
 
 const signup = require('./routes/signup');
 // const postJobs = require('./routes/postJobs');
@@ -21,8 +20,8 @@ dotenv.config();
 mongoose.connect(process.env.DATABASE_ACCESS, () => console.log("Database is connected"));
 
 // Middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 app.use(cors({
     origin: 'http://localhost:4000', //<-- Location of react app connecting to
     credentials: true
@@ -47,4 +46,10 @@ app.post('/api/login', (req,res) => {
 
 
 const port = process.env.PORT || 4000;
-app.listen(port, ()=> console.log(`server is running on ${port}...`))
+
+app.listen(port, err => {
+    if(err) {
+        return console.log("Error", err)
+    }
+    console.log(`server is running on ${port}...`)
+})
