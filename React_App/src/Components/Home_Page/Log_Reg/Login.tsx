@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
-import './HomeCompStyle.css'
+import '../HomeCompStyle.css'
 
 // React:
 //useContext, createContext,
@@ -26,12 +26,12 @@ const Login = () => {
 
 const loginUser = () => {
     axios({
-        method: "get",
+        method: "post",
         withCredentials: true,
         url: 'http://localhost:4000/signup',
     }).then((res) => console.log(res));
 
-    //Use res to set up contidional logic
+    //Use res to set up conditional logic
 };
 
     return(

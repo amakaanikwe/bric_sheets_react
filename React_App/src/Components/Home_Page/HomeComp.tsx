@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import {TweenMax, TimelineMax, Power3, gsap} from 'gsap';
-import Login from'./Login.jsx';
-import Registration from './Registration.jsx';
+import Login from'./Log_Reg/Login.jsx';
+import Registration from './Log_Reg/Registration.jsx';
 import backLogo from './warren-wong-pfmaMGZSby4-web.jpg';
 import './HomeCompStyle.css';
 

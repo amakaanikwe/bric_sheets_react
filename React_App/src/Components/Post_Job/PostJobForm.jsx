@@ -4,11 +4,15 @@ const PostJobForm = () => {
 
     const initialState = { 
         company:"", 
-        phoneNumber:""
+        jobTitle:"",
+        JobType: "",
+        jobDetails: "",
+        phoneNumber: "",
+        email: ""
     }
     
     const [entry, setEntry] = useState(initialState);
-    const {company, phoneNumber} = entry;
+    const {company, jobTitle, JobType, jobDetails, phoneNumber, email} = entry;
 
    const formChangeHandler = (e) => {
         let name = e.target.name;
@@ -25,7 +29,7 @@ const PostJobForm = () => {
 
    const formSubmitHandler = (e) => {
         e.preventDefault();
-        alert(`You have submitted a form ${company} ${phoneNumber}`);
+        alert("You have submitted a form ");
    }
 
    return (

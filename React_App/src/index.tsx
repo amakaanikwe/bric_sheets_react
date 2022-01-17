@@ -4,6 +4,7 @@ import {createStore} from 'redux';
 import { Provider } from 'react-redux';
 import combindReducers from './redux/reducers/combindReducers';
 import App from './App';
+import './App.css';
 
 const store = createStore(combindReducers);
 
