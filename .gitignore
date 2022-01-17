@@ -13,7 +13,7 @@ React_App/src/Components/Home_Page/warren-wong-pfmaMGZSby4-web.jpg
 /coverage
 
 # production
-/build
+/React_App/build
 /React_App_Backend/.env
 /React_App/src/Components/Home_Page/Log_Reg/test_login
 
